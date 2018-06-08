@@ -27,8 +27,16 @@ pip install scipy
 pip install scikit-image
 pip install dlib
 ```
-To make our life easier there is a `setup_env.sh` which should be run within the repository. This script creates a virtual python environment and will install the requirements.
-After that activate it in your terminal `$ source my_py_env/bin/activate` (HINT: this environment can also be used as interpreter for `PyCharm`)
+To make our life easier there is a `setup_env.sh` which should be sourced within the repository.
+```
+source setup_env.sh
+```
+This script creates a virtual python environment and will install the requirements.
+After that activate it in your terminal:
+```
+$ source my_py_env/bin/activate
+```
+s(HINT: this environment can also be used as interpreter for `PyCharm`)
 
 
 Training scripts still have some issues and will be fixed soon.

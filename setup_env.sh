@@ -6,5 +6,5 @@ export PYTHONPATH=
 #Then create and activate the virtual environment:
 virtualenv ${ENV_NAME}
 . ${ENV_NAME}/bin/activate
-pip list
+# pip list
 pip install -r requirements.txt
