@@ -16,7 +16,7 @@ For details about the method and quantitative results please check the [paper](h
 
 **new** [Conan-Cruise-Car example video](https://youtu.be/Bz6eF4Nl1O8)
 
-To use please install [PyTorch](http://pytorch.org/) and [OpenCV](https://opencv.org/) (for video) - I believe that's all you need apart from usual libraries such as numpy. You need a GPU to run Hopenet (for now).
+Dependencies:
 ```
 pip install numpy
 pip install matplotlib
@@ -27,11 +27,13 @@ pip install scipy
 pip install scikit-image
 pip install dlib
 ```
+To make our life easier there is a `setup_env.sh` which should be run within the repository. This script creates a virtual python environment and will install the requirements.
+After that activate it in your terminal `$ source my_py_env/bin/activate` (HINT: this environment can also be used as interpreter for `PyCharm`)
 
 
 Training scripts still have some issues and will be fixed soon.
 
-To test on a video using dlib face detections (center of head will be jumpy, and  [dlib-models](https://github.com/davisking/dlib-models) will be needed (e.g. `mmod_human_face_detector`)):
+To test on a video using dlib face detections (center of head will be jumpy, and  [dlib-models](https://github.com/davisking/dlib-models) (e.g. `mmod_human_face_detector`) and the trained model [300W-LP, alpha 2](https://drive.google.com/open?id=16OZdRULgUpceMKZV6U9PNFiigfjezsCY)  will be needed):
 ```
 python code/test_on_video_dlib.py --snapshot PATH_OF_SNAPSHOT --face_model PATH_OF_DLIB_MODEL --video PATH_OF_VIDEO --output_string STRING_TO_APPEND_TO_OUTPUT --n_frames N_OF_FRAMES_TO_PROCESS --fps FPS_OF_SOURCE_VIDEO
 ```

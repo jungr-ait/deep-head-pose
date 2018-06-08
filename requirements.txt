@@ -1,0 +1,14 @@
+# https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format
+####### requirements.txt #######
+#
+numpy
+matplotlib
+opencv-python==3.4.0.14
+pillow
+pandas
+torch
+torchvision
+scipy
+scikit-image
+dlib
+#
